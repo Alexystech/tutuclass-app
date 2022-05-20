@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:outlineProvider="paddedBounds"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="298dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="124dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tutuclass_logo2" />
+
+    <Button
+        android:id="@+id/loginActivityProfessorButton"
+        android:layout_width="298dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="70dp"
+        android:backgroundTint="@color/tutuclass_color_a600"
+        android:text="Tienes conocimientos y quieresser tutor de clases"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/loginActivityStudentButton"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="298dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="70dp"
+        android:backgroundTint="@color/white"
+        android:onClick="goStudentLogin"
+        android:outlineProvider="bounds"
+        android:text="Eres estudiante y quieres contratar a un tutor de clases"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginActivityProfessorButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
