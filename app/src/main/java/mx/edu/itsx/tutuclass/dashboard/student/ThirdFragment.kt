@@ -12,6 +12,7 @@ import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import mx.edu.itsx.tutuclass.R
+import mx.edu.itsx.tutuclass.dashboard.student.configuration.StudentConfigActivity
 import mx.edu.itsx.tutuclass.databinding.FragmentThirdBinding
 import mx.edu.itsx.tutuclass.login.StudentActivity
 
@@ -64,6 +65,11 @@ class ThirdFragment : Fragment() {
 
         binding.textViewLogOut.setOnClickListener {
             logOut()
+        }
+
+        binding.textViewConfiguration.setOnClickListener {
+            val intent = Intent(activity, StudentConfigActivity::class.java)
+            activity?.startActivity(intent)
         }
 
         return binding.root

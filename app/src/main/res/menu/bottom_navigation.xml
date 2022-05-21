@@ -2,14 +2,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/firstFragment"
-        android:icon="@drawable/icons8_home_96___"
+        android:icon="@drawable/icons8_home_36___"
         android:title="Menu" />
     <item
         android:id="@+id/secondFragment"
-        android:icon="@drawable/icons8_search_96___"
+        android:icon="@drawable/icons8_search_36___"
         android:title="Buscar" />
     <item
         android:id="@+id/thirdFragment"
-        android:icon="@drawable/icons8_user_72___"
+        android:icon="@drawable/icons8_user_36___"
         android:title="Perfil" />
 </menu>
